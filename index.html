@@ -9,10 +9,39 @@
 
 </head>
 <body>
-  <div class="container"></div>
-  <script src="main.js"></script>
- 
+  
+  <header class="heading"> 
+    <h1>Etch-A-Sketch</h1>
+  </header>
 
+  <main>
+
+    <div id="flex-container">
+      <div class="title"><h1>Sketch Pad</h1></div>
+    <div class="mode">mode : color</div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="button">
+          <button onclick="changeColor('black')">Black</button>
+          <button onclick="changeColor('white')">Erase</button>
+          <button onclick="changeColor('grey')">Grey</button>
+          <button onclick="changeColor('random')">Random</button>
+          <button onclick="reset()">Reset</button>
+        </div>
+        <div>
+          <input type="text" placeholder="change size" value="16" onchange="changeSize(this.value)"/> 
+          <button>Set size</button>
+        </div>
+      </div>
+    </div>
+   
+  </main>
+
+  <footer class="footer">
+    Built by AB
+  </footer>
+
+  
 </body>
-
+<script src="main.js"></script>
 </html>
